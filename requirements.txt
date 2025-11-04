@@ -1,0 +1,24 @@
+# --- Core numerics & data ---
+numpy>=1.25
+scipy>=1.11          # includes scipy.special.lambertw
+pandas>=2.0
+xarray>=2023.7
+netCDF4>=1.6
+zarr>=2.16           # optional but great for chunked outputs
+numba>=0.58          # optional speedups (JIT)
+
+# --- Config & serialization ---
+PyYAML>=6.0
+pydantic>=2.5        # validated configs
+
+# --- Plotting & CLI ---
+matplotlib>=3.7
+click>=8.1
+tqdm>=4.65           # nice progress bars
+rich>=13.5           # prettier CLI logs (optional)
+
+# --- Units (optional but recommended for safety) ---
+pint>=0.22
+
+# --- Compatibility helpers ---
+typing_extensions>=4.8 ; python_version < "3.11"
